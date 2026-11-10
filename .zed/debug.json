@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Debug db (scripted input)",
+    "build": {
+      "command": "gcc",
+      "args": ["-g", "-O0", "-o", "db.exe", "REPL.c"]
+    },
+    "adapter": "GDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/db.exe",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "stdio": ["$ZED_WORKTREE_ROOT/input.txt", null, null]
+  }
+]
